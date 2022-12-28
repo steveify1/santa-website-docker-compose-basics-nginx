@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "rm -rf ./node_modules && npm i && npm run build && npm run start"
+    "deploy": "rm -rf ./node_modules && mkdir node_modules && npm i && npm run build && npm run start"
   },
   "dependencies": {
     "@next/font": "13.1.1",
