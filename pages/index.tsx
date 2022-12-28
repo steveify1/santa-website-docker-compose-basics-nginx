@@ -17,6 +17,8 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <h1>Welcome to Santa Steve, 2022!</h1>
+
+          <p>I love you so so so much.</p>
         </div>
 
         <div className={styles.center}>
