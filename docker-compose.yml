@@ -3,7 +3,7 @@ services:
     build: .
     ports:
       - "3000:80" # We're mapping to port 80 here because our final image from our Dockerfile packages an nginx server that exposes port 80 by default
-    restart: on-failure
+    # restart: on-failure
 
   # nginx:
   #   image: nginx
