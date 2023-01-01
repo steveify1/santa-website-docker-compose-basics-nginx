@@ -1,8 +1,16 @@
 services:
   web:
-    build:
-      dockerfile: Dockerfile
-      context: .
+    build: .
     ports:
-      - "3000:3000"
+      - "3000:80" # We're mapping to port 80 here because our final image from our Dockerfile packages an nginx server that exposes port 80 by default
     restart: on-failure
+
+  # nginx:
+  #   image: nginx
+  #   container_name: nginx_server
+  #   ports:
+  #     - "8080:80"
+  #   depends_on:
+  #     - web
+  #   volumes:
+  #     - ./nginx.conf:/etc/nginx/nginx.conf
